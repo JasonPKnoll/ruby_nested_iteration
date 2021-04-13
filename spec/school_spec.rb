@@ -63,7 +63,7 @@ RSpec.describe School do
       expect(school.houses.include?(student1.house)).to eq(true)
     end
 
-    xit 'can sort all students at once' do
+    it 'can sort all students at once' do
       school.add_course(course1)
       school.add_course(course2)
       school.add_course(course3)
@@ -86,7 +86,7 @@ RSpec.describe School do
       end
     end
 
-    xit 'can list all students by name' do
+    it 'can list all students by name' do
       school.add_course(course1)
       school.add_course(course2)
       school.add_course(course3)
@@ -101,10 +101,10 @@ RSpec.describe School do
         'Ernie',
       ]
 
-      expect(student.names).to eq(expected)
+      expect(school.names).to eq(expected)
     end
 
-    xit 'can group all students by house' do
+    it 'can group all students by house' do
       school.add_course(course1)
       school.add_course(course2)
       school.add_course(course3)
