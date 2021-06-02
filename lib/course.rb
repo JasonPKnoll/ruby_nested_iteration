@@ -10,4 +10,11 @@ class Course
   def add_student(student)
     @students << student
   end
+
+  def groups_represented
+    student = students.map do |student|
+      student.group
+    end
+    student.uniq
+  end
 end
